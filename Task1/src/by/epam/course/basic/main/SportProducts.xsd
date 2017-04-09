@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+						elementFormDefault="qualified">
+	
+	
+	<xs:complexType name="itemsType">
+		<xs:sequence>
+			<xs:element type="SportProducts" name="SportProduct" maxOccurs="unbounded"/>				
+		</xs:sequence>
+	</xs:complexType>	
+	
+	
+	<xs:complexType name="SportProducts">
+		<xs:sequence>
+			<xs:element type="xs:string" name="name" minOccurs="1" maxOccurs="1"/>
+			<xs:element type="xs:string" name="desctiption" minOccurs="1" maxOccurs="1"/>
+			<xs:element type="xs:integer" name="Owner_ID" default="-1"/>			
+			<xs:element type="Status" name="status" default="IN_STOCK"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+
+
+	<xs:simpleType name="Status" final="restriction">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="RENTED" />
+			<xs:enumeration value="IN_STOCK" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:element name="items" type="itemsType"/>
+	
+</xs:schema>

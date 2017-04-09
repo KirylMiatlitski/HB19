@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<SportProduct>
+		<name>Гиря</name>
+		<desctiption>10 кг</desctiption>
+		<Owner_ID>1</Owner_ID>
+		<status>IN_STOCK</status>
+	</SportProduct>
+	<SportProduct>
+		<name>Гиря</name>
+		<desctiption>20 кг</desctiption>
+		<Owner_ID>-1</Owner_ID>
+		<status>IN_STOCK</status>
+	</SportProduct>
+	<SportProduct>
+		<name>Велосипед</name>
+		<desctiption>Спортивный</desctiption>
+		<Owner_ID>10</Owner_ID>
+		<status>RENTED</status>
+	</SportProduct>
+	<SportProduct>
+		<name>Обруч</name>
+		<desctiption>Детский</desctiption>
+		<Owner_ID>12</Owner_ID>
+		<status>RENTED</status>
+	</SportProduct>
+</items>
