@@ -13,7 +13,7 @@
 	<xs:complexType name="SportProducts">
 		<xs:sequence>
 			<xs:element type="xs:string" name="name" minOccurs="1" maxOccurs="1"/>
-			<xs:element type="xs:string" name="desctiption" minOccurs="1" maxOccurs="1"/>
+			<xs:element type="xs:string" name="description" minOccurs="1" maxOccurs="1"/>
 			<xs:element type="xs:integer" name="Owner_ID" default="-1"/>			
 			<xs:element type="Status" name="status" default="IN_STOCK"/>
 		</xs:sequence>
